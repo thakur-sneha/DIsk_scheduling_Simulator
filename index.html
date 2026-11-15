@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disk_schedular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Disk Scheduling Simuator</h1>
+
+    <p>
+        Visualize and understand different
+        disk scheduling algorithms.
+    </p>
+    </header>
+    <div class="container">
+        <h2>Disk Scheduling Simulator</h2>
+        <div class="input_section">
+            <label for="requests">Disk Request Queue</label>
+            <input type="text" id="requests" placeholder="Example: 98, 183, 37, 122, 14">
+            <label for="head">Initial Head Posotion </label>
+            <input type="number" id="head" placeholder="Eg: 53">
+        </div>
+         <div class="algorithm-section">
+         <label for="algorithm">Disk Scheduling Algorithm </label>
+        <select name="" id="algorithm">
+            <option value="">Choose Algorithm</option>
+            <option value="FCFS">FCFS</option>
+            <option value="SSTF">SSTF</option>
+            <option value="SCAN">SCAN</option>
+            <option value="CSCAN">C-SCAN</option>
+            <option value="LOOK">LOOK</option>
+            <option value="CLOOK">C-LOOK</option>
+
+        </select>
+    </div>
+    <div class="disk-settings">
+        <label for="diskSize">Disk Size</label>
+        <input type="number" id="diskSize" placeholder="Enter disk Size" min="1" required>
+        <label for="direction">Initial Direction</label>
+        <select name="" id="direction">
+            <option value="">Select Direction</option>
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+        </select>
+    </div>
+    <div class="button-section">
+        <button id="runBtn" type="button">Run Simulator</button>
+        <button id="resetBtn" type="button">Reset</button>
+    </div>
+    <div class="result-section">
+        <h2>Simuation Results</h2>
+        <div id="results">
+            <p>Results Will appear here after simulation</p>
+        </div>
+    </div>
+
+<button id="compareBtn" type="button">
+    Compare All Algorithms
+</button>
+
+    </div>
+   
+       
+   <script src="script.js"></script>
+</body>
+</html>
